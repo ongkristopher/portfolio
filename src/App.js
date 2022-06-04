@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class App extends Component {
     state = { displayBio: false };
 
-    toggleDisplayBio() {
+    toggleDisplayBio = () => {
         this.setState({ displayBio: !this.state.displayBio });
     }
 

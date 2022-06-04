@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Projects from './Projects';
 
 export default class App extends Component {
     state = { displayBio: false };
@@ -22,6 +23,9 @@ export default class App extends Component {
             <p>I'm always looking forward to working on meaningful projects.</p>
             { bio }
             <button onClick={this.toggleDisplayBio}>{ !this.state.displayBio ? 'Read More' : 'Show Less'}</button>
+
+            <hr />
+            <Projects />
         </div>
         )
     }
